@@ -33,7 +33,7 @@ export default function EarthquakeItem() {
     year: "numeric",
   });
 
-  const localTime = new Date(data.DateTime).toLocaleDateString("id-ID", {
+  const localTime = new Date(data.DateTime).toLocaleTimeString("id-ID", {
     timeStyle: "full",
   });
 
