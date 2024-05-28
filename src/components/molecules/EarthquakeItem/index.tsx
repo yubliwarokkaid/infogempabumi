@@ -59,7 +59,10 @@ export default function EarthquakeItem() {
             <div className="ml-4">
               <p className="title-earthquake">Waktu:</p>
               <span className="subTitle-earthquake">
-                {data.Tanggal},&nbsp;{data.Jam}&nbsp;-&nbsp;{localDate},&nbsp;
+                {data.Tanggal},&nbsp;{data.Jam}
+              </span>
+              <span className="subTitle-earthquake">
+                {localDate},&nbsp;
                 {localTime}
               </span>
             </div>
