@@ -27,6 +27,13 @@ export default function EarthquakeItem() {
     getEarthquakeList();
   }, []);
 
+  const localDateTime = new Date().toLocaleDateString("id-ID", {
+    day: "2-digit",
+    month: "long",
+    year: "numeric",
+    timeStyle: "long",
+  });
+
   return (
     <section className="mb-32 mt-40">
       <div className="flex flex-wrap items-center rounded bg-slate-100 p-2">
@@ -49,7 +56,7 @@ export default function EarthquakeItem() {
             <div className="ml-4">
               <p className="title-earthquake">Waktu:</p>
               <span className="subTitle-earthquake">
-                {data.Tanggal},&nbsp;{data.Jam}
+                {data.Tanggal},&nbsp;{data.Jam}&nbsp;-&nbsp;{localDateTime}
               </span>
             </div>
           </div>
