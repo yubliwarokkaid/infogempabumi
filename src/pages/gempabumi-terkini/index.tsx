@@ -36,7 +36,7 @@ export default function GempaBumiTerkini(props: GempaBumiTerkiniProps) {
           description="Gempabumi Terkini"
         />
       </div>
-      <section className="h-full w-full bg-[url('/background/background.svg')] bg-center bg-no-repeat object-cover pb-24">
+      <section className="bg-image-bmkg h-full w-full bg-center bg-no-repeat object-cover pb-24">
         <div className="container mx-auto px-6">
           <p className="mb-2 text-xs italic md:text-right">
             Sumber Data: BMKG - Badan Meteorologi, Klimatologi, dan Geofisika

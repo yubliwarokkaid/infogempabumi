@@ -23,6 +23,9 @@ module.exports = {
       boxShadow: {
         "3xl": "0 0 5px #bbb",
       },
+      backgroundImage: {
+        "image-bmkg": "url('/background/background.svg')",
+      },
     },
   },
   plugins: [],
