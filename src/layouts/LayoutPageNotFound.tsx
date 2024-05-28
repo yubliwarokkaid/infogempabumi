@@ -1,8 +1,7 @@
-import { Footer, Navbar } from "@/components";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 
-export interface LayoutRootProps {
+export interface LayoutPageNotFoundProps {
   children: React.ReactNode;
   title: string;
 }
@@ -14,7 +13,7 @@ const poppins = Poppins({
   display: "swap",
 });
 
-export default function LayoutRoot(props: LayoutRootProps) {
+export default function LayoutPageNotFound(props: LayoutPageNotFoundProps) {
   const { children, title } = props;
 
   return (
@@ -29,9 +28,7 @@ export default function LayoutRoot(props: LayoutRootProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={poppins.className}>
-        <Navbar />
         <div>{children}</div>
-        <Footer />
       </main>
     </>
   );

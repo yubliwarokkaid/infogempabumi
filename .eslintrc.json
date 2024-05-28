@@ -3,6 +3,7 @@
   "rules": {
     "react-hooks/exhaustive-deps": "off",
     "@next/next/no-img-element": "off",
-    "react/jsx-key": "off"
+    "react/jsx-key": "off",
+    "react/jsx-no-undef": "off"
   }
 }

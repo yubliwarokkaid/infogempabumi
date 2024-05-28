@@ -11,7 +11,7 @@ export default function Home() {
   }, []);
 
   return (
-    <LayoutRoot>
+    <LayoutRoot title="Informasi Gempabumi dan Cuaca | BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)">
       <div className="preloader">
         <Loading />
       </div>

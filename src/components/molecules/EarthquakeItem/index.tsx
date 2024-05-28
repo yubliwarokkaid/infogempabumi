@@ -29,7 +29,7 @@ export default function EarthquakeItem() {
   return (
     <section className="mb-32 mt-40">
       <div className="flex flex-wrap items-center rounded bg-slate-100 p-2">
-        <div className="mr-0 h-auto w-full overflow-hidden rounded-md lg:mr-10 lg:w-1/2">
+        <div className="mr-0 h-auto w-1/2 overflow-hidden rounded-md lg:mr-10 lg:w-1/2">
           <img
             src={`https://data.bmkg.go.id/DataMKG/TEWS/${data.Shakemap}`}
             alt={data.Wilayah}

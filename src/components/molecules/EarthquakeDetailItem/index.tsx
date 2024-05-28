@@ -1,7 +1,5 @@
-import { EarthquakeTypes } from "@/services/data_types";
 import { Jost } from "next/font/google";
 import Image from "next/image";
-import { WiEarthquake } from "react-icons/wi";
 
 export interface EarthquakeDetailItemProps {
   tanggal: string;
@@ -41,7 +39,7 @@ export default function EarthquakeDetailItem(
 
   if (type === "terkini") {
     return (
-      <tbody className="divide-y divide-gray-200 bg-transparent">
+      <tbody className="divide-y divide-gray-100 bg-transparent">
         <tr className="hover:bg-slate-100">
           <td className="table-body-xs font-mono">
             {tanggal},&nbsp;{jam}
@@ -72,7 +70,7 @@ export default function EarthquakeDetailItem(
   }
 
   return (
-    <tbody className="divide-y divide-gray-200 bg-transparent">
+    <tbody className="divide-y divide-gray-100 bg-transparent">
       <tr className="hover:bg-slate-100">
         <td className="table-body-xs font-mono">
           {tanggal},&nbsp;{jam}

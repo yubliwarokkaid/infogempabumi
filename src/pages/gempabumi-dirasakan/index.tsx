@@ -19,18 +19,18 @@ export default function GempaBumiDirasakan(props: GempaBumiDirasakanProps) {
   }, []);
 
   return (
-    <LayoutRoot>
+    <LayoutRoot title="Gempabumi Dirasakan | BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)">
       <div className="preloader">
         <Loading />
       </div>
-      <div className="mt-[60px]">
+      <div className="mb-20 mt-[60px]">
         <BreadCrumb
           title="Gempabumi Dirasakan"
           description="Gempabumi Dirasakan"
         />
       </div>
-      <section className="h-full w-full bg-[url('/background/background.svg')] bg-cover bg-center bg-no-repeat pb-28">
-        <div className="container mx-auto px-6 pt-20">
+      <section className="h-full w-full bg-[url('/background/background.svg')] bg-center bg-no-repeat object-cover pb-24">
+        <div className="container mx-auto px-6">
           <p className="mb-2 text-xs italic md:text-right">
             Sumber Data: BMKG - Badan Meteorologi, Klimatologi, dan Geofisika
           </p>
