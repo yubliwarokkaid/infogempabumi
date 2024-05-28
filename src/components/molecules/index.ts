@@ -1,13 +1,5 @@
-import EarthquakeItem from "./EarthquakeItem";
-import WeatherItem from "./WeatherItem";
-import WeatherDetailItem from "./WeatherDetailItem";
 import EarthquakeDetailItem from "./EarthquakeDetailItem";
+import EarthquakeItem from "./EarthquakeItem";
 import PageNotFoundItem from "./PageNotFoundItem";
 
-export {
-  EarthquakeItem,
-  WeatherItem,
-  WeatherDetailItem,
-  EarthquakeDetailItem,
-  PageNotFoundItem,
-};
+export { EarthquakeDetailItem, EarthquakeItem, PageNotFoundItem };
