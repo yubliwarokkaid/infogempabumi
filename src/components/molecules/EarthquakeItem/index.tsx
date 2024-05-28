@@ -61,6 +61,7 @@ export default function EarthquakeItem() {
               <span className="subTitle-earthquake">
                 {data.Tanggal},&nbsp;{data.Jam}
               </span>
+              <br />
               <span className="subTitle-earthquake">
                 {localDate},&nbsp;
                 {localTime}
