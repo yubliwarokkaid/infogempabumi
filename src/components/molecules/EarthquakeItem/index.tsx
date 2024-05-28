@@ -5,7 +5,6 @@ import { useCallback, useEffect, useState } from "react";
 export default function EarthquakeItem() {
   const [data, setData] = useState({
     Tanggal: "",
-    DateTime: "",
     Jam: "",
     Coordinates: "",
     Lintang: "",
@@ -26,16 +25,6 @@ export default function EarthquakeItem() {
   useEffect(() => {
     getEarthquakeList();
   }, []);
-
-  const localDate = new Date(data.DateTime).toLocaleDateString("id-ID", {
-    day: "2-digit",
-    month: "long",
-    year: "numeric",
-  });
-
-  const localTime = new Date(data.DateTime).toLocaleTimeString("id-ID", {
-    timeStyle: "long",
-  });
 
   return (
     <section className="mb-32 mt-40">
@@ -60,11 +49,6 @@ export default function EarthquakeItem() {
               <p className="title-earthquake">Waktu:</p>
               <span className="subTitle-earthquake">
                 {data.Tanggal},&nbsp;{data.Jam}
-              </span>
-              <br />
-              <span className="subTitle-earthquake">
-                {localDate},&nbsp;
-                {localTime}
               </span>
             </div>
           </div>
