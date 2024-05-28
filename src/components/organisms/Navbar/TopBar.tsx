@@ -1,31 +1,24 @@
-import moment from "moment";
 import { useEffect, useState } from "react";
 
 export default function TopBar() {
-  let fullDate = new Date().toLocaleDateString("id-ID", {
+  const fullDate = new Date().toLocaleDateString("id-ID", {
     day: "numeric",
     month: "long",
     year: "numeric",
-    hour: "numeric",
-    minute: "numeric",
-    second: "numeric",
-    timeZoneName: "long",
   });
 
-  const [ctime, setCtime] = useState(fullDate);
+  let localtime = new Date().toLocaleTimeString("id-ID", {
+    timeStyle: "full",
+  });
+
+  const [ctime, setCtime] = useState(localtime);
 
   useEffect(() => {
     const updateTime = () => {
-      let fullDate = new Date().toLocaleDateString("id-ID", {
-        day: "numeric",
-        month: "long",
-        year: "numeric",
-        hour: "numeric",
-        minute: "numeric",
-        second: "numeric",
-        timeZoneName: "long",
+      let localtime = new Date().toLocaleTimeString("id-ID", {
+        timeStyle: "full",
       });
-      setCtime(fullDate);
+      setCtime(localtime);
     };
 
     setInterval(updateTime);
@@ -37,6 +30,7 @@ export default function TopBar() {
         <div className="flex items-center justify-between">
           <span className="font-mono text-xs uppercase text-slate-100">
             Hari ini&nbsp;
+            {fullDate}&nbsp;-&nbsp;
             {ctime}
           </span>
         </div>
