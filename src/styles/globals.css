@@ -57,6 +57,6 @@ body {
   }
 
   .subTitle-earthquake {
-    @apply text-sm font-normal tracking-wider text-slate-700;
+    @apply text-wrap text-sm font-medium tracking-wider text-slate-700;
   }
 }

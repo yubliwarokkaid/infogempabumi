@@ -1,10 +1,10 @@
 import { PageNotFoundItem } from "@/components";
-import LayoutPageNotFound from "@/layouts/LayoutPageNotFound";
+import LayoutRoot from "@/layouts";
 
 export default function PageNotFound() {
   return (
-    <LayoutPageNotFound title="404 | Page Not Found">
+    <LayoutRoot title="404 | Page Not Found">
       <PageNotFoundItem />
-    </LayoutPageNotFound>
+    </LayoutRoot>
   );
 }

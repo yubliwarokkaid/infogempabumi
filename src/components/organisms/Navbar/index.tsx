@@ -20,11 +20,11 @@ export default function Navbar() {
   return (
     <>
       <TopBar />
-      <header className="absolute left-0 top-8 z-10 flex w-full items-center bg-transparent transition-all duration-500">
+      <header className="absolute left-0 top-8 z-10 flex w-full items-center border-b border-b-slate-200 bg-transparent transition-all duration-500">
         <div className="container mx-auto">
           <div className="relative flex items-center justify-between">
             <Link href="/" className="mr-2 block py-4 text-lg font-bold">
-              EarthquakeWeather.info
+              bmkg.info
             </Link>
             <div className="flex items-center">
               <ToggleMenu />

@@ -1,4 +1,10 @@
-import { BreadCrumb, EarthquakeDetailItem, Loading } from "@/components";
+import {
+  BreadCrumb,
+  EarthquakeDetailItem,
+  Footer,
+  Loading,
+  Navbar,
+} from "@/components";
 import LayoutRoot from "@/layouts";
 import { getEarthquakeLatest } from "@/services/data_api";
 import { EarthquakeTypes } from "@/services/data_types";
@@ -23,6 +29,7 @@ export default function GempaBumiTerkini(props: GempaBumiTerkiniProps) {
       <div className="preloader">
         <Loading />
       </div>
+      <Navbar />
       <div className="mb-20 mt-[60px]">
         <BreadCrumb
           title="Gempabumi Terkini (M ≥ 5.0)"
@@ -87,6 +94,7 @@ export default function GempaBumiTerkini(props: GempaBumiTerkiniProps) {
           </div>
         </div>
       </section>
+      <Footer />
     </LayoutRoot>
   );
 }

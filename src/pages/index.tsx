@@ -1,4 +1,4 @@
-import { HomePage, Loading } from "@/components";
+import { Footer, HomePage, Loading, Navbar } from "@/components";
 import LayoutRoot from "@/layouts";
 import { useEffect } from "react";
 
@@ -15,7 +15,9 @@ export default function Home() {
       <div className="preloader">
         <Loading />
       </div>
+      <Navbar />
       <HomePage />
+      <Footer />
     </LayoutRoot>
   );
 }

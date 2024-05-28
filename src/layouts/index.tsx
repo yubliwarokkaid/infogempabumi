@@ -1,4 +1,3 @@
-import { Footer, Navbar } from "@/components";
 import { Poppins } from "next/font/google";
 import Head from "next/head";
 
@@ -29,9 +28,7 @@ export default function LayoutRoot(props: LayoutRootProps) {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={poppins.className}>
-        <Navbar />
         <div>{children}</div>
-        <Footer />
       </main>
     </>
   );
