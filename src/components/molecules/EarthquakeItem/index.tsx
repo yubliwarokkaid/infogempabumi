@@ -34,7 +34,7 @@ export default function EarthquakeItem() {
   });
 
   const localTime = new Date(data.DateTime).toLocaleTimeString("id-ID", {
-    timeStyle: "full",
+    timeStyle: "long",
   });
 
   return (
