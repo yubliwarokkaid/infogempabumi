@@ -29,7 +29,7 @@ export default function TopBar() {
       <div className="container mx-auto px-6">
         <div className="flex items-center justify-between">
           <span className="font-mono text-xs uppercase text-slate-100">
-            Hari ini&nbsp;
+            Hari ini,&nbsp;
             {fullDate}&nbsp;-&nbsp;
             {ctime}
           </span>
