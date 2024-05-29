@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Technology-Bold;
-  src: url("/assets/font/Technology-Bold.ttf");
+  font-family: Digital;
+  src: url("/assets/font/Digital.TTF");
 }
 
 .font-time {
-  @apply text-timer text-base tracking-widest antialiased;
-  font-family: Technology-Bold;
+  @apply text-timer text-sm tracking-widest antialiased;
+  font-family: Digital;
 }
 
 * {
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-8 bg-slate-50 shadow-3xl;
+  @apply fixed z-[9999] -mt-9 bg-slate-50 shadow-3xl;
   backdrop-filter: blur(5px);
 }
 

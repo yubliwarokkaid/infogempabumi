@@ -1,3 +1,4 @@
+import { toZonedTime } from "date-fns-tz";
 import { useEffect, useState } from "react";
 
 export default function TopBar() {
@@ -7,8 +8,15 @@ export default function TopBar() {
     year: "numeric",
   });
 
+  let utc = new Date();
+
+  const nyDate = toZonedTime(utc, "America/New_York").toLocaleTimeString(
+    "id-ID",
+    { timeZoneName: "short", timeZone: "utc" },
+  );
+
   let localtime = new Date().toLocaleTimeString("id-ID", {
-    timeStyle: "long",
+    timeZoneName: "short",
   });
 
   const [ctime, setCtime] = useState(localtime);
@@ -16,7 +24,7 @@ export default function TopBar() {
   useEffect(() => {
     const updateTime = () => {
       let localtime = new Date().toLocaleTimeString("id-ID", {
-        timeStyle: "long",
+        timeZoneName: "short",
       });
       setCtime(localtime);
     };
@@ -25,18 +33,17 @@ export default function TopBar() {
   }, [1000]);
 
   return (
-    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-800 to-slate-900 py-2">
+    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-800 via-slate-900 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <p className="text-xs uppercase tracking-wide text-slate-100">
             Hari ini,&nbsp;
             {fullDate}
           </p>
-          <div className="flex items-center justify-between">
-            <p className="hidden text-xs uppercase tracking-wider text-slate-100 antialiased sm:block">
-              Standar Waktu Indonesia&nbsp;&nbsp;
-            </p>
-            <span className="font-time">{ctime}</span>
+          <div className="flex items-center">
+            <span className="font-time mr-2">{ctime}</span>
+            <span className="font-time mr-2">/</span>
+            <span className="font-time">{nyDate}</span>
           </div>
         </div>
       </div>
