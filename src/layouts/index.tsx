@@ -1,4 +1,4 @@
-import { Poppins } from "next/font/google";
+import { Noto_Sans } from "next/font/google";
 import Head from "next/head";
 
 export interface LayoutRootProps {
@@ -6,7 +6,7 @@ export interface LayoutRootProps {
   title: string;
 }
 
-const poppins = Poppins({
+const noto = Noto_Sans({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800", "900"],
   style: "normal",
@@ -27,7 +27,7 @@ export default function LayoutRoot(props: LayoutRootProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={poppins.className}>
+      <main className={noto.className}>
         <div>{children}</div>
       </main>
     </>

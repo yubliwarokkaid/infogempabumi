@@ -26,6 +26,9 @@ module.exports = {
       backgroundImage: {
         "image-bmkg": "url('/background/background.svg')",
       },
+      colors: {
+        timer: "#00ff00",
+      },
     },
   },
   plugins: [],

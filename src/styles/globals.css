@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: Technology-Bold;
+  src: url("/assets/font/Technology-Bold.ttf");
+}
+
+.font-time {
+  @apply text-timer text-base tracking-widest antialiased;
+  font-family: Technology-Bold;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -19,7 +29,7 @@ body {
 
 /* Navbar */
 .hamburger-line {
-  @apply my-2 block h-[2px] w-[30px] rounded-full bg-slate-800;
+  @apply my-[5px] block h-[3px] w-[25px] rounded-full bg-slate-800;
 }
 
 .hamburger-active > span:nth-child(1) {
