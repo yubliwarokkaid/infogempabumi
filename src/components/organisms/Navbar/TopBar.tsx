@@ -36,12 +36,12 @@ export default function TopBar() {
             {fullDate}
           </p>
           <div className="flex items-center">
-            <p className="mr-2 hidden text-xs uppercase tracking-wider text-slate-100 antialiased md:block">
+            <p className="hidden text-xs uppercase tracking-wider text-slate-100 antialiased md:block">
               Standar Waktu Indonesia
             </p>
             <span className="font-time w-[112px] text-right">{ctime}</span>
             <div className="hidden md:block">
-              <div className="ml-4 flex flex-wrap items-center">
+              <div className="ml-6 flex flex-wrap items-center">
                 <Link
                   href="https://www.facebook.com/yubliwarokka/"
                   target="_blank"
