@@ -29,7 +29,7 @@ export default function TopBar() {
   }, [1000]);
 
   return (
-    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-800 via-slate-950 to-slate-800 py-2">
+    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-700 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <p className="text-xs uppercase tracking-wider text-slate-100 antialiased">
@@ -39,13 +39,13 @@ export default function TopBar() {
             <p className="mr-2 hidden text-xs uppercase tracking-wider text-slate-100 antialiased md:block">
               Standar Waktu Indonesia
             </p>
-            <span className="font-time w-[98px] text-right">{ctime}</span>
+            <span className="font-time w-[112px] text-right">{ctime}</span>
             <div className="hidden md:block">
               <div className="ml-4 flex flex-wrap items-center">
                 <Link
                   href="https://www.facebook.com/yubliwarokka/"
                   target="_blank"
-                  className="group mr-3 flex h-7 w-7 items-center justify-center rounded-full bg-facebook transition duration-300 ease-in hover:bg-blue-600"
+                  className="group mr-3 flex h-[26px] w-[26px] items-center justify-center rounded-md bg-facebook transition duration-300 ease-in hover:bg-blue-600"
                   title="Official Facebook"
                 >
                   <FaFacebook className="text-base text-white" />
@@ -53,7 +53,7 @@ export default function TopBar() {
                 <Link
                   href="https://www.instagram.com/yubliwarokka__/"
                   target="_blank"
-                  className="group mr-3 flex h-7 w-7 items-center justify-center rounded-full bg-instagram transition duration-300 ease-in hover:bg-fuchsia-700"
+                  className="group mr-3 flex h-[26px] w-[26px] items-center justify-center rounded-md bg-instagram transition duration-300 ease-in hover:bg-fuchsia-700"
                   title="Official Instagram"
                 >
                   <LuInstagram className="text-base text-white" />
@@ -61,7 +61,7 @@ export default function TopBar() {
                 <Link
                   href="https://github.com/yubliwarokkaid"
                   target="_blank"
-                  className="group flex h-7 w-7 items-center justify-center rounded-full bg-githubHover transition duration-300 ease-in hover:bg-github"
+                  className="group flex h-[26px] w-[26px] items-center justify-center rounded-md bg-zinc-600 transition duration-300 ease-in hover:bg-zinc-700"
                   title="Github Repository"
                 >
                   <FaGithub className="text-base text-white" />

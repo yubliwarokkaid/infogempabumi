@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Noto_Sans } from "next/font/google";
 import Head from "next/head";
 
@@ -29,6 +30,7 @@ export default function LayoutRoot(props: LayoutRootProps) {
       </Head>
       <main className={noto.className}>
         <div>{children}</div>
+        <SpeedInsights />
       </main>
     </>
   );

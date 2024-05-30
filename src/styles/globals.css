@@ -8,23 +8,13 @@
 }
 
 .font-time {
-  @apply text-sm uppercase tracking-widest text-timer antialiased;
+  @apply text-base uppercase tracking-widest text-timer antialiased;
   font-family: Seven Segment;
-}
-
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
 }
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  width: 100%;
-  height: 100vh;
-  @apply scroll-smooth;
+  @apply m-0 box-border h-screen w-full scroll-smooth p-0;
 }
 
 /* Navbar */
@@ -45,8 +35,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-[35px] bg-slate-50 shadow-3xl md:-mt-11;
-  backdrop-filter: blur(5px);
+  @apply fixed z-[9999] -mt-[35px] bg-slate-50 shadow-3xl backdrop-blur-sm md:-mt-[41px];
 }
 
 @layer components {

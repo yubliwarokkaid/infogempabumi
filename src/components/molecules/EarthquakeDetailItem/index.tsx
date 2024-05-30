@@ -96,7 +96,7 @@ export default function EarthquakeDetailItem(
         <td className="table-body-sm">{kedalaman}</td>
         <td className="table-body-xs text-wrap">
           <p className="mb-1">{wilayah},</p>
-          <span className="text-xs font-semibold uppercase text-sky-500">
+          <span className="text-xs font-semibold uppercase text-amber-500">
             {dirasakan}
           </span>
         </td>

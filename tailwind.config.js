@@ -33,12 +33,6 @@ module.exports = {
         timer: "#00ff00",
         facebook: "#1877F2",
         instagram: "#c32aa3",
-        github: "#24292e",
-        githubHover: "#2b3137",
-        whatsapp: "#25D366",
-      },
-      animation: {
-        "spin-slow": "spin 3s linear infinite",
       },
     },
   },
