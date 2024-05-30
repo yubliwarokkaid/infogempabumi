@@ -11,7 +11,7 @@ export default function BreadCrumb(props: BreadCrumbProps) {
   return (
     <section className="bg-sky-50 py-10">
       <div className="container mx-auto px-6">
-        <div className="flex flex-wrap items-center justify-center md:justify-between">
+        <div className="flex flex-wrap items-center justify-start sm:justify-between">
           <h3 className="text-xl font-semibold tracking-wider text-slate-600">
             {title}
           </h3>

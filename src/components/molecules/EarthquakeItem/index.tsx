@@ -26,13 +26,15 @@ export default function EarthquakeItem() {
     getEarthquakeList();
   }, []);
 
+  const ROOT_IMG = process.env.NEXT_PUBLIC_API;
+
   return (
     <section className="flex items-center justify-center">
       <div className="mb-32 mt-40 flex w-3/4 items-center justify-center">
         <div className="flex flex-wrap items-center rounded bg-slate-100 p-2 lg:flex-nowrap">
           <div className="mr-0 h-auto overflow-hidden rounded-md lg:mr-10 lg:w-1/2">
             <img
-              src={`https://data.bmkg.go.id/DataMKG/TEWS/${data.Shakemap}`}
+              src={`${ROOT_IMG}/${data.Shakemap}`}
               alt={data.Wilayah}
               className="h-full w-full object-cover"
             />

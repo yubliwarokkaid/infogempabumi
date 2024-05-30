@@ -3,6 +3,7 @@ import Link from "next/link";
 import ToggleMenu from "./ToggleMenu";
 import MenuLinks from "./MenuLinks";
 import TopBar from "./TopBar";
+import Image from "next/image";
 
 export default function Navbar() {
   useEffect(() => {
@@ -20,14 +21,23 @@ export default function Navbar() {
   return (
     <>
       <TopBar />
-      <header className="absolute left-0 top-9 z-10 flex w-full items-center border-b border-b-slate-200 bg-transparent transition-all duration-500">
+      <header className="absolute left-0 top-[35px] z-10 flex w-full items-center border-b border-b-slate-200 bg-transparent transition-all duration-500 md:top-11">
         <div className="container mx-auto">
           <div className="relative flex items-center justify-between">
             <Link
               href="/"
-              className="mr-2 block py-4 text-lg font-bold uppercase"
+              className="mr-2 flex items-center py-4 text-lg font-extrabold uppercase"
             >
-              Info BMKG
+              <Image
+                src="/logo/loading.svg"
+                width={300}
+                height={300}
+                alt="logo"
+                className="mr-2 h-5 w-5"
+              />
+              <p className="text-blue-700">
+                Info <span className="text-green-700">BMKG</span>
+              </p>
             </Link>
             <div className="flex items-center">
               <ToggleMenu />

@@ -40,7 +40,7 @@ export default function EarthquakeDetailItem(
   if (type === "terkini") {
     return (
       <tbody className="divide-y divide-gray-100 bg-transparent">
-        <tr className="hover:bg-slate-100">
+        <tr className="hover:bg-slate-50">
           <td className="table-body-xs font-mono">
             {tanggal},&nbsp;{jam}
           </td>
@@ -71,7 +71,7 @@ export default function EarthquakeDetailItem(
 
   return (
     <tbody className="divide-y divide-gray-100 bg-transparent">
-      <tr className="hover:bg-slate-100">
+      <tr className="hover:bg-slate-50">
         <td className="table-body-xs font-mono">
           {tanggal},&nbsp;{jam}
         </td>

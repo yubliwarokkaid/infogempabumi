@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: Digital;
-  src: url("/assets/font/Digital.TTF");
+  font-family: Seven Segment;
+  src: url("/assets/font/Seven Segment.ttf");
 }
 
 .font-time {
-  @apply text-timer text-sm tracking-widest antialiased;
-  font-family: Digital;
+  @apply text-sm uppercase tracking-widest text-timer antialiased;
+  font-family: Seven Segment;
 }
 
 * {
@@ -45,7 +45,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-9 bg-slate-50 shadow-3xl;
+  @apply fixed z-[9999] -mt-[35px] bg-slate-50 shadow-3xl md:-mt-11;
   backdrop-filter: blur(5px);
 }
 
