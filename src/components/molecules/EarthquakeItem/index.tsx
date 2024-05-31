@@ -30,9 +30,9 @@ export default function EarthquakeItem() {
 
   return (
     <section className="flex items-center justify-center">
-      <div className="mb-32 mt-40 flex w-3/4 items-center justify-center">
+      <div className="mb-32 mt-40 flex w-full items-center justify-center lg:w-3/4">
         <div className="flex flex-wrap items-center rounded-md bg-slate-100 p-2 lg:flex-nowrap dark:border dark:border-slate-700 dark:bg-slate-900">
-          <div className="mr-0 h-auto overflow-hidden rounded-md lg:mr-10 lg:w-1/2">
+          <div className="mr-0 h-auto w-full overflow-hidden rounded-md lg:mr-10 lg:w-1/2">
             <img
               src={`${ROOT_IMG}/${data.Shakemap}`}
               alt={data.Wilayah}

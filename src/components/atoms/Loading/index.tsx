@@ -14,10 +14,7 @@ export default function Loading() {
         zIndex: 99,
       }}
     >
-      <div className="">
-        <ReactLoading type="spin" color="#0ea5e9" height="3rem" width="3rem" />
-        <p className="mt-2 text-sm text-slate-100">Loading</p>
-      </div>
+      <ReactLoading type="bars" color="#dc2626" height="3rem" width="3rem" />
     </div>
   );
 }

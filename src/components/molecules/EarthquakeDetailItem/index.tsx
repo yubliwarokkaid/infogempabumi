@@ -41,15 +41,15 @@ export default function EarthquakeDetailItem(
     return (
       <tbody className="divide-y divide-slate-100 bg-transparent dark:divide-slate-700">
         <tr className="hover:bg-slate-50 dark:hover:bg-slate-800">
-          <td className="table-body-xs font-mono">
+          <td className="table-body-xs-date font-mono">
             {tanggal},&nbsp;{jam}
           </td>
           <td className="table-body-sm">{koordinat}</td>
           <td className="table-body-sm">{lintang}</td>
           <td className="table-body-sm">{bujur}</td>
           <td
-            className={`cursor-help whitespace-nowrap border border-slate-200 px-6 py-4 text-base font-semibold tracking-wider text-red-600 dark:border-slate-700 ${jost.className}`}
-            title={`${tanggal} - Gempabumi dengan kekuatan ${magnitude} Skala Richter - ${potensi}`}
+            className={`table-body-magnitudo ${jost.className}`}
+            title={`Gempabumi dengan magnitudo ${magnitude} Skala Richter - ${potensi}`}
           >
             <div className="flex items-center">
               {magnitude}
@@ -57,7 +57,7 @@ export default function EarthquakeDetailItem(
                 src="/icon/ic-magnitudo.svg"
                 width={10}
                 height={10}
-                alt="Icon Magnitudo"
+                alt={`${magnitude} Skala Richter`}
                 className="ml-2 w-3"
               />
             </div>
@@ -72,23 +72,23 @@ export default function EarthquakeDetailItem(
   return (
     <tbody className="divide-y divide-slate-100 bg-transparent dark:divide-slate-700">
       <tr className="hover:bg-slate-50 hover:dark:bg-slate-800">
-        <td className="table-body-xs font-mono">
+        <td className="table-body-xs-date font-mono">
           {tanggal},&nbsp;{jam}
         </td>
         <td className="table-body-sm">{koordinat}</td>
         <td className="table-body-sm">{lintang}</td>
         <td className="table-body-sm">{bujur}</td>
         <td
-          className={`cursor-help whitespace-nowrap border border-slate-200 px-6 py-4 text-base font-semibold tracking-wider text-sky-500 dark:border-slate-700 ${jost.className}`}
-          title={`${tanggal} - Gempabumi dengan kekuatan ${magnitude} Skala Richter - ${wilayah}`}
+          className={`table-body-magnitudo ${jost.className}`}
+          title={`Gempabumi dengan magnitudo ${magnitude} Skala Richter - ${wilayah}`}
         >
           <div className="flex items-center justify-center">
             {magnitude}
             <Image
-              src="/icon/ic-magnitudo-sky.svg"
+              src="/icon/ic-magnitudo.svg"
               width={10}
               height={10}
-              alt="Icon Magnitudo"
+              alt={`${magnitude} Skala Richter`}
               className="ml-2 w-3"
             />
           </div>

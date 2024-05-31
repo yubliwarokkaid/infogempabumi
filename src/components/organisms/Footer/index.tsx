@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto">
         <div className="flex flex-wrap items-center justify-center lg:justify-between">
           <Link
-            href="https://data.bmkg.go.id/gempabumi/"
+            href="https://data.bmkg.go.id/"
             target="_blank"
             title="BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)"
             className="text-center text-xs font-light tracking-widest text-slate-300 md:text-sm lg:text-left"
@@ -14,11 +14,11 @@ export default function Footer() {
             Sumber Data: BMKG (Badan Meteorologi, Klimatologi, dan Geofisika)
           </Link>
           <Link
-            href="https://github.com/yubliwarokkaid"
-            className="text-center text-xs font-light text-slate-400 md:text-right md:text-sm"
+            href="https://github.com/yubliwarokkaid/infogempabumi"
+            className="flex items-center text-center text-xs font-light text-slate-400 md:text-right md:text-sm"
           >
-            Design with <span className="text-red-600">❤</span> by Yubli Audy
-            Warokka™
+            Design with&nbsp;<span className="text-red-600">❤</span>
+            &nbsp;by Yubli Audy Warokka™
           </Link>
         </div>
       </div>

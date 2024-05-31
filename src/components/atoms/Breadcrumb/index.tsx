@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 export interface BreadCrumbProps {
   title: string;
@@ -9,7 +10,7 @@ export default function BreadCrumb(props: BreadCrumbProps) {
   const { title, description } = props;
 
   return (
-    <section className="bg-sky-50 py-10 dark:bg-slate-800">
+    <section className="bg-slate-100 py-10 dark:bg-slate-800">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-start sm:justify-between">
           <h3 className="text-xl font-semibold tracking-wider text-slate-600 dark:text-slate-100">
@@ -23,7 +24,10 @@ export default function BreadCrumb(props: BreadCrumbProps) {
               Beranda
             </Link>
             &nbsp;
-            <span className="text-xs">/</span>&nbsp;
+            <span className="text-xs">
+              <MdKeyboardDoubleArrowRight />
+            </span>
+            &nbsp;
             <p className="text-sky-500">{description}</p>
           </div>
         </div>

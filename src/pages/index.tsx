@@ -1,4 +1,4 @@
-import { Footer, HomePage, Loading, Navbar } from "@/components";
+import { Footer, HomePage, Loading, Navbar, Partner } from "@/components";
 import LayoutRoot from "@/layouts";
 import { useEffect } from "react";
 
@@ -17,6 +17,7 @@ export default function Home() {
       </div>
       <Navbar />
       <HomePage />
+      <Partner />
       <Footer />
     </LayoutRoot>
   );

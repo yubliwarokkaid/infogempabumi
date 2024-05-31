@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-[35px] bg-transparent shadow-3xl backdrop-blur-sm md:-mt-[41px] dark:bg-slate-950;
+  @apply fixed z-[9999] -mt-[39px] bg-transparent shadow-3xl backdrop-blur-sm md:-mt-[41px] dark:bg-slate-950;
 }
 
 /* Dark Toggle */
@@ -50,11 +50,19 @@ body {
   }
 
   .table-body-sm {
-    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-sm font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-200;
+    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-sm font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-400;
   }
 
   .table-body-xs {
-    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-xs font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-200;
+    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-xs font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-400;
+  }
+
+  .table-body-xs-date {
+    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-xs font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-sky-500;
+  }
+
+  .table-body-magnitudo {
+    @apply cursor-help whitespace-nowrap border border-slate-200 px-6 py-4 text-base font-semibold tracking-wider text-red-600 dark:border-slate-700;
   }
 
   .title-earthquake {
@@ -62,6 +70,12 @@ body {
   }
 
   .subTitle-earthquake {
-    @apply text-wrap text-sm font-medium tracking-wider text-slate-700 dark:text-slate-400;
+    @apply text-wrap text-sm font-medium tracking-wider text-slate-700 dark:text-slate-300;
+  }
+
+  /* Grayscale */
+
+  .grayscale-card {
+    @apply flex h-14 w-14 items-center justify-center rounded-lg bg-slate-200 p-2 transition duration-300 ease-in-out hover:-translate-y-1 dark:bg-slate-800;
   }
 }

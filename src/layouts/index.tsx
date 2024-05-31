@@ -1,6 +1,7 @@
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Noto_Sans } from "next/font/google";
 import Head from "next/head";
+import { useEffect } from "react";
 
 export interface LayoutRootProps {
   children: React.ReactNode;
@@ -16,6 +17,18 @@ const noto = Noto_Sans({
 
 export default function LayoutRoot(props: LayoutRootProps) {
   const { children, title } = props;
+
+  useEffect(() => {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
+  }, []);
 
   return (
     <>
