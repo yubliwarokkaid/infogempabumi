@@ -14,7 +14,7 @@ export default function Loading() {
         zIndex: 99,
       }}
     >
-      <ReactLoading type="bars" color="#dc2626" height="3rem" width="3rem" />
+      <ReactLoading type="bars" color="#ef4444" height="3rem" width="3rem" />
     </div>
   );
 }
