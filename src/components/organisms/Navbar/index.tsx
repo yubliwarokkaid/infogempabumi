@@ -21,7 +21,7 @@ export default function Navbar() {
   return (
     <>
       <TopBar />
-      <header className="absolute left-0 top-[35px] z-10 flex w-full items-center border-b border-b-slate-200 bg-transparent transition-all duration-500 md:top-[41px]">
+      <header className="absolute left-0 top-[35px] z-10 flex w-full items-center border-b border-b-slate-200 bg-transparent transition-all duration-500 md:top-[41px] dark:border-b-slate-700 dark:bg-slate-900">
         <div className="container mx-auto">
           <div className="relative flex items-center justify-between">
             <Link

@@ -39,8 +39,8 @@ export default function EarthquakeDetailItem(
 
   if (type === "terkini") {
     return (
-      <tbody className="divide-y divide-gray-100 bg-transparent">
-        <tr className="hover:bg-slate-50">
+      <tbody className="divide-y divide-slate-100 bg-transparent dark:divide-slate-700">
+        <tr className="hover:bg-slate-50 dark:hover:bg-slate-800">
           <td className="table-body-xs font-mono">
             {tanggal},&nbsp;{jam}
           </td>
@@ -48,7 +48,7 @@ export default function EarthquakeDetailItem(
           <td className="table-body-sm">{lintang}</td>
           <td className="table-body-sm">{bujur}</td>
           <td
-            className={`cursor-help  whitespace-nowrap px-6 py-4 text-base font-semibold tracking-wider text-red-600 ${jost.className}`}
+            className={`cursor-help whitespace-nowrap border border-slate-200 px-6 py-4 text-base font-semibold tracking-wider text-red-600 dark:border-slate-700 ${jost.className}`}
             title={`${tanggal} - Gempabumi dengan kekuatan ${magnitude} Skala Richter - ${potensi}`}
           >
             <div className="flex items-center">
@@ -70,8 +70,8 @@ export default function EarthquakeDetailItem(
   }
 
   return (
-    <tbody className="divide-y divide-gray-100 bg-transparent">
-      <tr className="hover:bg-slate-50">
+    <tbody className="divide-y divide-slate-100 bg-transparent dark:divide-slate-700">
+      <tr className="hover:bg-slate-50 hover:dark:bg-slate-800">
         <td className="table-body-xs font-mono">
           {tanggal},&nbsp;{jam}
         </td>
@@ -79,7 +79,7 @@ export default function EarthquakeDetailItem(
         <td className="table-body-sm">{lintang}</td>
         <td className="table-body-sm">{bujur}</td>
         <td
-          className={`cursor-help whitespace-nowrap px-6 py-4 text-base font-semibold tracking-wider text-sky-500 ${jost.className}`}
+          className={`cursor-help whitespace-nowrap border border-slate-200 px-6 py-4 text-base font-semibold tracking-wider text-sky-500 dark:border-slate-700 ${jost.className}`}
           title={`${tanggal} - Gempabumi dengan kekuatan ${magnitude} Skala Richter - ${wilayah}`}
         >
           <div className="flex items-center justify-center">

@@ -1,7 +1,9 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FaFacebook, FaGithub } from "react-icons/fa6";
+import { IoMoon } from "react-icons/io5";
 import { LuInstagram } from "react-icons/lu";
+import { MdLightMode, MdOutlineLightMode } from "react-icons/md";
 
 export default function TopBar() {
   const fullDate = new Date().toLocaleDateString("id-ID", {
@@ -25,11 +27,22 @@ export default function TopBar() {
       setCtime(localtime);
     };
 
-    setInterval(updateTime);
-  }, [1000]);
+    setInterval(updateTime, 1000);
+
+    const darkToggle: any = document.querySelector("#dark-toggle");
+    const html = document.querySelector("html");
+
+    darkToggle?.addEventListener("click", function () {
+      if (darkToggle.checked) {
+        html?.classList.add("dark");
+      } else {
+        html?.classList.remove("dark");
+      }
+    });
+  }, []);
 
   return (
-    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-700 py-2">
+    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <p className="text-xs uppercase tracking-wider text-slate-100 antialiased">
@@ -67,6 +80,20 @@ export default function TopBar() {
                   <FaGithub className="text-base text-white" />
                 </Link>
               </div>
+            </div>
+            <div className="ml-4 flex items-center">
+              <span className="mr-2 text-sm text-slate-200">
+                <MdLightMode />
+              </span>
+              <input type="checkbox" className="hidden" id="dark-toggle" />
+              <label htmlFor="dark-toggle">
+                <div className="flex h-4 w-8 cursor-pointer items-center rounded-full bg-slate-200 p-1">
+                  <div className="toggle-circle h-[10px] w-[10px] rounded-full bg-slate-500 transition duration-300 ease-in-out" />
+                </div>
+              </label>
+              <span className="ml-2 text-sm text-slate-200">
+                <IoMoon />
+              </span>
             </div>
           </div>
         </div>

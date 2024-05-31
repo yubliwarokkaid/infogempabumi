@@ -36,17 +36,18 @@ export default function GempaBumiDirasakan(props: GempaBumiDirasakanProps) {
           description="Gempabumi Dirasakan"
         />
       </div>
-      <section className="bg-image-bmkg h-full w-full bg-center bg-no-repeat object-cover pb-24">
+      <section className="dark:bg-image-bmkg-dark h-full w-full bg-image-bmkg bg-center bg-no-repeat object-cover pb-24">
         <div className="container mx-auto px-6">
-          <p className="mb-2 text-xs italic md:text-right">
-            Sumber Data: BMKG - Badan Meteorologi, Klimatologi, dan Geofisika
-          </p>
           <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
               <div className="inline-block min-w-full py-2 sm:px-6 lg:px-8">
                 <div className="overflow-hidden">
-                  <table className="min-w-full table-auto divide-y divide-slate-200 border border-slate-200">
-                    <thead className="bg-slate-100">
+                  <table className="min-w-full table-auto border-collapse divide-y divide-slate-200 border border-slate-200 dark:divide-slate-700 dark:border-slate-700">
+                    <caption className="mb-2 caption-top">
+                      Sumber Data: BMKG - Badan Meteorologi, Klimatologi, dan
+                      Geofisika
+                    </caption>
+                    <thead className="bg-slate-100 dark:bg-slate-900">
                       <tr>
                         <th scope="col" className="table-head">
                           Waktu Gempa

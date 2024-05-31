@@ -14,7 +14,7 @@
 
 html,
 body {
-  @apply m-0 box-border h-screen w-full scroll-smooth p-0;
+  @apply m-0 box-border h-screen w-full scroll-smooth p-0 dark:bg-slate-950;
 }
 
 /* Navbar */
@@ -38,24 +38,30 @@ body {
   @apply fixed z-[9999] -mt-[35px] bg-slate-50 shadow-3xl backdrop-blur-sm md:-mt-[41px];
 }
 
+/* Dark Toggle */
+
+#dark-toggle:checked ~ label div.toggle-circle {
+  @apply translate-x-[14px];
+}
+
 @layer components {
   .table-head {
-    @apply px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-slate-600;
+    @apply border border-slate-200 px-6 py-4 text-left text-sm font-semibold uppercase tracking-wider text-slate-600 dark:border-slate-700 dark:text-slate-100;
   }
 
   .table-body-sm {
-    @apply whitespace-nowrap px-6 py-2 text-sm font-light tracking-wider text-slate-800;
+    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-sm font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-200;
   }
 
   .table-body-xs {
-    @apply whitespace-nowrap px-6 py-2 text-xs font-light tracking-wider text-slate-800;
+    @apply whitespace-nowrap border border-slate-200 px-6 py-2 text-xs font-light tracking-wider text-slate-800 dark:border-slate-700 dark:text-slate-200;
   }
 
   .title-earthquake {
-    @apply text-xs font-medium uppercase tracking-wider text-slate-500;
+    @apply text-xs font-medium uppercase tracking-wider text-slate-500 dark:text-slate-500;
   }
 
   .subTitle-earthquake {
-    @apply text-wrap text-sm font-medium tracking-wider text-slate-700;
+    @apply text-wrap text-sm font-medium tracking-wider text-slate-700 dark:text-slate-400;
   }
 }

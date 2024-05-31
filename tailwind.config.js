@@ -6,6 +6,7 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       container: {
@@ -25,6 +26,7 @@ module.exports = {
       },
       backgroundImage: {
         "image-bmkg": "url('/background/background.svg')",
+        "image-bmkg-dark": "url('/background/background-dark.svg')",
       },
       backgroundColor: {
         loading: "rgba(0, 0, 0, 0.888)",
