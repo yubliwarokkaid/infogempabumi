@@ -19,7 +19,7 @@ body {
 
 /* Navbar */
 .hamburger-line {
-  @apply my-[5px] block h-[3px] w-[25px] rounded-full bg-slate-800;
+  @apply my-[5px] block h-[3px] w-[25px] rounded-full bg-slate-800 dark:bg-slate-500;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-[35px] bg-slate-50 shadow-3xl backdrop-blur-sm md:-mt-[41px];
+  @apply fixed z-[9999] -mt-[35px] bg-transparent shadow-3xl backdrop-blur-sm md:-mt-[41px] dark:bg-slate-950;
 }
 
 /* Dark Toggle */

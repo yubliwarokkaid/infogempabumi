@@ -42,7 +42,7 @@ export default function TopBar() {
   }, []);
 
   return (
-    <section className="sticky left-0 top-0 mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
+    <section className="w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
           <p className="text-xs uppercase tracking-wider text-slate-100 antialiased">
