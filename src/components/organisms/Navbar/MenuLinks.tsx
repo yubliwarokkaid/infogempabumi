@@ -4,7 +4,7 @@ export default function MenuLinks() {
   return (
     <nav
       id="nav-menu"
-      className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-slate-100 py-2 shadow-lg duration-300 focus:transition-all lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
+      className="absolute right-4 top-full hidden w-full max-w-[250px] rounded-lg bg-slate-100 py-2 shadow-lg duration-300 focus:transition-all dark:bg-slate-800 lg:static lg:block lg:max-w-full lg:rounded-none lg:bg-transparent lg:shadow-none"
     >
       <ul className="block lg:flex">
         <li className="group">
