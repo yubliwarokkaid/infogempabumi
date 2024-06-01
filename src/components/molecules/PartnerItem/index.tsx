@@ -19,7 +19,7 @@ export default function PartnerItem() {
               width={40}
               height={40}
               alt="Data BMKG"
-              className="animate-spin-slow h-8 w-8"
+              className="animate-spin-slow group-hover:animate-swipe h-8 w-8"
             />
           </Link>
           <Link
@@ -28,7 +28,7 @@ export default function PartnerItem() {
             className="grayscale-card group"
             title="Tailwind CSS"
           >
-            <RiTailwindCssFill className="animate-spin-slow text-5xl text-tailwind" />
+            <RiTailwindCssFill className="animate-spin-slow group-hover:animate-swipe text-5xl text-tailwind" />
           </Link>
           <Link
             href="https://react.dev/"
@@ -36,7 +36,7 @@ export default function PartnerItem() {
             className="grayscale-card group"
             title="React JS Dev"
           >
-            <RiReactjsFill className="animate-spin-slow text-5xl text-react" />
+            <RiReactjsFill className="animate-spin-slow group-hover:animate-swipe text-5xl text-react" />
           </Link>
           <Link
             href="https://nextjs.org/"
@@ -44,7 +44,7 @@ export default function PartnerItem() {
             className="grayscale-card group"
             title="Next JS"
           >
-            <SiNextdotjs className="animate-spin-slow text-4xl text-next dark:text-slate-100" />
+            <SiNextdotjs className="animate-spin-slow group-hover:animate-swipe text-4xl text-next dark:text-slate-100" />
           </Link>
           <Link
             href="https://react-icons.github.io/react-icons/"
@@ -57,7 +57,7 @@ export default function PartnerItem() {
               width={40}
               height={40}
               alt="React icons"
-              className="animate-spin-slow h-9 w-9"
+              className="animate-spin-slow group-hover:animate-swipe h-9 w-9"
             />
           </Link>
         </div>
