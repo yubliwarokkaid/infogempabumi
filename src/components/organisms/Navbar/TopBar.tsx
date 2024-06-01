@@ -56,11 +56,11 @@ export default function TopBar() {
     <section className="mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
-          <p className="text-xs uppercase tracking-wider text-slate-100 antialiased">
+          <p className="font-mono text-sm uppercase tracking-wider text-slate-100 antialiased">
             {fullDate}
           </p>
           <div className="flex items-center">
-            <p className="hidden text-xs uppercase tracking-wider text-slate-100 antialiased md:block">
+            <p className="mr-2 hidden font-mono text-sm uppercase tracking-wider text-slate-100 antialiased md:block">
               Standar Waktu Indonesia
             </p>
             <span className="font-time w-[112px] text-right">{ctime}</span>

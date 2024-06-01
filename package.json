@@ -22,10 +22,12 @@
     "nprogress": "^0.2.0",
     "react": "^18",
     "react-dom": "^18",
+    "react-floating-whatsapp": "^5.0.8",
     "react-icons": "^5.2.1",
     "react-loaders": "^3.0.1",
     "react-loading": "^2.0.3",
-    "react-moment": "^1.1.3"
+    "react-moment": "^1.1.3",
+    "react-whatsapp-widget": "^2.2.0"
   },
   "devDependencies": {
     "@types/dateformat": "^5.0.2",

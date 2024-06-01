@@ -39,6 +39,29 @@ module.exports = {
         react: "#3998B6",
         next: "#000000",
         reactIcon: "#be185d",
+        whatsapp: "#16a34a",
+        whatsappDark: "#075E54",
+      },
+      animation: {
+        goyang: "goyang 1s ease-in-out infinite",
+        swipe: "swipe 1s infinite ease-in-out",
+        "spin-slow": "spin 3s linear infinite",
+      },
+      keyframes: {
+        goyang: {
+          "0%, 100%": { transform: "rotate(-3deg)" },
+          "50%": { transform: "rotate(3deg)" },
+        },
+        swipe: {
+          "0%, 100%": {
+            transform: "translateY(0)",
+            "animation-timing-function": "cubic-bezier(0.8, 0, 1, 1)",
+          },
+          "50%": {
+            transform: "translateY(25%)",
+            "animation-timing-function": "cubic-bezier(0, 0, 0.2, 1)",
+          },
+        },
       },
     },
   },

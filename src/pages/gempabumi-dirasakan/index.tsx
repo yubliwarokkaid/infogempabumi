@@ -1,6 +1,5 @@
 import {
   BreadCrumb,
-  EarthquakeDetailItem,
   Footer,
   LatestFeltEarthquakeItem,
   Loading,

@@ -23,11 +23,9 @@ export default function BreadCrumb(props: BreadCrumbProps) {
             >
               Beranda
             </Link>
-            &nbsp;
-            <span className="text-xs">
+            <span className="px-2 text-sm">
               <MdKeyboardDoubleArrowRight />
             </span>
-            &nbsp;
             <p className="text-sky-500">{description}</p>
           </div>
         </div>

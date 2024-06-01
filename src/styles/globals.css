@@ -35,7 +35,7 @@ body {
 }
 
 .navbar-fixed {
-  @apply fixed z-[9999] -mt-[39px] bg-transparent shadow-3xl backdrop-blur-sm md:-mt-[41px] dark:bg-slate-950;
+  @apply fixed z-[9999] -mt-[39px] bg-transparent shadow-3xl backdrop-blur-sm dark:bg-slate-950 md:-mt-[41px];
 }
 
 /* Dark Toggle */
@@ -76,6 +76,18 @@ body {
   /* Grayscale */
 
   .grayscale-card {
-    @apply flex h-14 w-14 items-center justify-center rounded-lg bg-slate-200 p-2 transition duration-300 ease-in-out hover:-translate-y-1 dark:bg-slate-800;
+    @apply flex h-14 w-14 items-center justify-center rounded-lg bg-slate-200 p-2 transition duration-300 ease-in-out hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700;
+  }
+
+  .btn-whatsapp {
+    @apply bg-whatsapp dark:bg-whatsappDark flex items-center rounded-full px-6 py-3 text-base font-light tracking-wide text-slate-100 transition duration-300 ease-in-out hover:bg-green-500 dark:hover:bg-green-800;
+  }
+
+  .menu-link {
+    @apply flex py-2 text-sm uppercase tracking-wider text-slate-800 transition duration-300 ease-in-out group-hover:text-sky-500 dark:text-slate-100;
+  }
+
+  .btn-home {
+    @apply flex max-w-fit items-center rounded bg-sky-500 px-6 py-2 text-base text-slate-100 transition-all duration-500 ease-in-out hover:bg-sky-600;
   }
 }
