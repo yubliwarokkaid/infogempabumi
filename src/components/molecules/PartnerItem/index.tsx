@@ -19,7 +19,7 @@ export default function PartnerItem() {
               width={40}
               height={40}
               alt="Data BMKG"
-              className="animate-spin-slow group-hover:animate-swipe h-8 w-8"
+              className="animate-spin-slow group-hover:animate-swipe h-[34px] w-[34px]"
             />
           </Link>
           <Link
