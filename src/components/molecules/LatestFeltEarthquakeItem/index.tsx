@@ -13,7 +13,7 @@ export default function LatestFeltEarthquakeItem(
 
   if (type === "terkini") {
     return (
-      <section className="dark:bg-image-bmkg-dark h-full w-full bg-image-bmkg bg-center bg-no-repeat object-cover pb-24">
+      <section className="h-full w-full bg-image-bmkg bg-center bg-no-repeat object-cover pb-24 dark:bg-image-bmkg-dark">
         <div className="container mx-auto px-6">
           <div className="flex flex-col">
             <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">
@@ -76,7 +76,7 @@ export default function LatestFeltEarthquakeItem(
   }
 
   return (
-    <section className="dark:bg-image-bmkg-dark h-full w-full bg-image-bmkg bg-center bg-no-repeat object-cover pb-24">
+    <section className="h-full w-full bg-image-bmkg bg-center bg-no-repeat object-cover pb-24 dark:bg-image-bmkg-dark">
       <div className="container mx-auto px-6">
         <div className="flex flex-col">
           <div className="overflow-x-auto sm:-mx-6 lg:-mx-8">

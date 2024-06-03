@@ -42,8 +42,20 @@
 
 /* Dark Toggle */
 
-#dark-toggle:checked ~ label div.toggle-circle {
-  @apply translate-x-5;
+.bg-light {
+  background: linear-gradient(180deg, #fcd34d, #f59e0b);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bg-dark {
+  background: linear-gradient(180deg, #0ea5e9, #0369a1);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.label-dark {
+  box-shadow:
+    inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
 }
 
 @layer components {

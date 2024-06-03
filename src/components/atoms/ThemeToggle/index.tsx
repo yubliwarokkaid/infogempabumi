@@ -39,15 +39,21 @@ export default function ThemeToggle() {
           onChange={toggleDarkMode}
         />
         <div
-          className={`flex h-5 w-10 items-center overflow-hidden rounded-full bg-gray-400 duration-300 ease-in-out dark:bg-gray-600 ${darkMode ? "justify-end" : "justify-start"}`}
+          className={`label-dark flex h-[22] w-10 items-center overflow-hidden rounded-full bg-slate-300 p-[2px] duration-300 ease-in-out dark:bg-slate-500 ${darkMode ? "justify-end" : "justify-start"}`}
         >
           {darkMode === true ? (
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-slate-400 shadow-md transition duration-300 ease-in-out">
-              <BsMoonStarsFill className="text-sm text-slate-700" />
+            <div
+              className="bg-dark flex h-[18px] w-[18px] items-center justify-center rounded-full p-1 shadow-md transition duration-300 ease-in-out"
+              title="Dark"
+            >
+              <BsMoonStarsFill className="text-sm text-slate-100" />
             </div>
           ) : (
-            <div className="flex h-5 w-5 items-center justify-center rounded-full bg-yellow-500 shadow-md transition duration-300 ease-in-out">
-              <BsSunFill className="text-sm text-slate-100" />
+            <div
+              className="bg-light flex h-[18px] w-[18px] items-center justify-center rounded-full p-1 shadow-md transition duration-300 ease-in-out"
+              title="Light"
+            >
+              <BsSunFill className="text-sm text-slate-700" />
             </div>
           )}
         </div>

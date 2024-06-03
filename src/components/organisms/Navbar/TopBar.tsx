@@ -33,13 +33,11 @@ export default function TopBar() {
     <section className="mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
-          <div className="flex flex-wrap items-center">
-            <p className="mr-2 text-xs uppercase tracking-wider text-slate-100 antialiased">
-              {fullDate}
-            </p>
-            <span className="font-time w-[112px]">{ctime}</span>
-          </div>
+          <p className="mr-2 text-xs uppercase tracking-wider text-slate-100 antialiased">
+            {fullDate}
+          </p>
           <div className="flex items-center">
+            <span className="font-time w-[112px]">{ctime}</span>
             <div className="hidden sm:block">
               <div className="ml-4 flex flex-wrap items-center">
                 <Link
