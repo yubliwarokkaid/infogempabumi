@@ -1,4 +1,4 @@
-import { EarthquakeItem } from "@/components/molecules";
+import { EarthquakeItem } from "@/components";
 
 export default function HomePage() {
   return (
