@@ -12,9 +12,11 @@
   font-family: Seven Segment;
 }
 
-html,
-body {
-  @apply m-0 box-border h-screen w-full scroll-smooth p-0 dark:bg-slate-950;
+@layer base {
+  html,
+  body {
+    @apply m-0 box-border h-screen w-full scroll-smooth p-0 dark:bg-slate-950;
+  }
 }
 
 /* Navbar */
@@ -41,7 +43,7 @@ body {
 /* Dark Toggle */
 
 #dark-toggle:checked ~ label div.toggle-circle {
-  @apply translate-x-[14px];
+  @apply translate-x-5;
 }
 
 @layer components {
@@ -80,7 +82,7 @@ body {
   }
 
   .btn-whatsapp {
-    @apply bg-whatsapp dark:bg-whatsappDark flex items-center rounded-full px-6 py-3 text-base font-light tracking-wide text-slate-100 transition duration-300 ease-in-out hover:bg-green-500 dark:hover:bg-green-800;
+    @apply flex items-center rounded-full bg-whatsapp px-6 py-3 text-base font-light tracking-wide text-slate-100 transition duration-300 ease-in-out hover:bg-green-500 dark:bg-whatsappDark dark:hover:bg-green-800;
   }
 
   .menu-link {

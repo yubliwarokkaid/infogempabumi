@@ -1,6 +1,6 @@
+import { ThemeToggle } from "@/components";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BsMoonStarsFill, BsSunFill } from "react-icons/bs";
 import { FaFacebook, FaGithub } from "react-icons/fa6";
 import { LuInstagram } from "react-icons/lu";
 
@@ -27,44 +27,20 @@ export default function TopBar() {
     };
 
     setInterval(updateTime, 1000);
-
-    const darkToggle: any = document.querySelector("#dark-toggle");
-    const html = document.querySelector("html");
-
-    darkToggle?.addEventListener("click", function () {
-      if (darkToggle.checked) {
-        html?.classList.add("dark");
-        localStorage.theme = "dark";
-      } else {
-        html?.classList.remove("dark");
-        localStorage.theme = "light";
-      }
-    });
-
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      darkToggle.checked = true;
-    } else {
-      darkToggle.checked = false;
-    }
   }, []);
 
   return (
     <section className="mb-10 w-full bg-gradient-to-t from-slate-700 via-slate-950 to-slate-800 py-2">
       <div className="container mx-auto px-6">
         <div className="flex flex-wrap items-center justify-between">
-          <p className="font-mono text-sm uppercase tracking-wider text-slate-100 antialiased">
-            {fullDate}
-          </p>
-          <div className="flex items-center">
-            <p className="mr-2 hidden font-mono text-sm uppercase tracking-wider text-slate-100 antialiased md:block">
-              Standar Waktu Indonesia
+          <div className="flex flex-wrap items-center">
+            <p className="mr-2 text-xs uppercase tracking-wider text-slate-100 antialiased">
+              {fullDate}
             </p>
-            <span className="font-time w-[112px] text-right">{ctime}</span>
-            <div className="hidden md:block">
+            <span className="font-time w-[112px]">{ctime}</span>
+          </div>
+          <div className="flex items-center">
+            <div className="hidden sm:block">
               <div className="ml-4 flex flex-wrap items-center">
                 <Link
                   href="https://www.facebook.com/yubliwarokka/"
@@ -92,20 +68,7 @@ export default function TopBar() {
                 </Link>
               </div>
             </div>
-            <div className="ml-4 flex items-center">
-              <span className="mr-2 text-sm text-slate-200">
-                <BsSunFill />
-              </span>
-              <input type="checkbox" className="hidden" id="dark-toggle" />
-              <label htmlFor="dark-toggle">
-                <div className="flex h-4 w-8 cursor-pointer items-center rounded-full bg-slate-200 p-1">
-                  <div className="toggle-circle h-[10px] w-[10px] rounded-full bg-slate-500 transition duration-300 ease-in-out" />
-                </div>
-              </label>
-              <span className="ml-2 text-xs text-slate-200">
-                <BsMoonStarsFill />
-              </span>
-            </div>
+            <ThemeToggle />
           </div>
         </div>
       </div>
